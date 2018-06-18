@@ -9,4 +9,4 @@ removerPrimeiros n (a:x) = removerPrimeiros (n - 1) x
 shift :: Int -> [Int] -> [Int]
 shift n [] = []
 shift 0 x = x
-shift n x = (removerPrimeiros (length x - n - 1) x) ++ primeirosElementos n x
+shift n x = (removerPrimeiros n x) ++ primeirosElementos n x
